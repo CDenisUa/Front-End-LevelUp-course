@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+}
+.first-letter::first-letter{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+.first_line::first-line{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+/* Выделеный текст пользователем, свойства color,background, background-color */
+.selection::selection{
+    color: red;
+    background-color: blue;
+}
+input::placeholder{
+    color: blue;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:focus{
+    color: red;
+    background-color: blue;
+}
+h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.google:active{
+    color:red;
+        /*a:link { color: blue; }          Непосещённые ссылки */
+        /*a:visited { color: purple; }     Посещённые ссылки */
+        /*a:hover { background: yellow; }  Ссылки при наведении */
+        /*a:active { color: red; }         Активные ссылки */ 
+    }
+input[type="text"]:disabled{
+    background-color: red;
+}

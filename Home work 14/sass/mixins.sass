@@ -1,0 +1,29 @@
+@mixin main_background($bg_height,$url_name)
+    width: 100%
+    height: $bg_height
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: url(../image/prewiew/#{$url_name}.png)
+    display: flex
+    justify-content: center
+
+@mixin main_background_color($bg_height,$bgcolor)
+    width: 100%
+    height: $bg_height
+    background-color: $bgcolor
+    display: flex
+    justify-content: center
+
+@mixin content_flexcontainer($Myheight,$display,$juscont,$direction,$align_items) 
+    width: 1110px
+    height: $Myheight
+    display: $display
+    justify-content: $juscont
+    flex-direction: $direction
+    align-items: $align_items
+
+@mixin myfont($fsize,$fweigth,$ffamily,$fcolor)
+    font-size: $fsize
+    font-weight: $fweigth
+    font-family: $ffamily
+    color: $fcolor

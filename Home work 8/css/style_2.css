@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding:0;
+}
+ul{
+    list-style: none;
+
+}
+input{
+     display: none;
+}
+section{
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10em;
+    border: 2px dotted red;
+    border-width: 0px 2px 0px 2px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 20px;
+}
+h1,h2{
+    color: red;
+   
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+h2{ 
+    border-top: 1px solid rgb(211, 211, 211)  ;
+    margin-top: 20px;
+    line-height: 50px;
+}
+input:checked+label h2:before{
+    content: "\2228";
+    float: right;
+    font-size: 15px;
+}
+input:not(:checked)+label h2:before{
+    content: "\2227";
+    float: right;
+    font-size: 15px;
+}
+
+#box_1:checked~.div_1{
+    display: none;
+}
+
+#box_2:checked~.div_2{
+    display: none;
+}
+#box_3:checked~.div_3{
+    display: none;
+}

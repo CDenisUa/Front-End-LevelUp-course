@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Home work 5</title>
+</head>
+<body>
+    <!-- Создаете 2 файла .html и .css, подключаете стили и работаете как профессионалы.
+Создайте блок с классом "container", задайте ему ширину в 480 пикселей и 
+разметите по центру, в него помещать все остальные блоки. 
+Все отступы и размеры подбирайте сами, не принципиально. Главное выполнить стилевые правила, как в задании.
+Каждый раздел группируете в отдельный блок, классы и идентификаторы пишете сами.
+!!!Не забудьте сбросить все отступы  и сделать границу внутренней (box-sizing).
+
+1. Рекурсия
+Блоки вложены друг в друга, с границей и внутренним отступом.
+
+2. Двойная рекурсия
+То же что и в прошлом блоке, только блоки сделать строчно-блочными и размером по 50%, 
+а так же избавиться от "натурального пробела" или если будете искать в интернете "загадочные отступы".
+
+3. Многоходовочка
+Три параграфа с левым отступом и "буквицей".
+
+4. эти буквы строчные
+Заголовок написан строчными буквами.
+Вставить в текст небольшие картинки, типа смайликов или emodzi.
+Обернуть фразу или слово  в span и форматировать. (как скруглять углы, выясните)
+
+5. Навигация
+Ненумерованный список, с ссылками якорями. Фон (выяснить как), внешние и внутренние отступы, 
+декорация такая же как в заголовках на которые они будут ссылаться.
+Тип вложенного файла: acrobat
+HomeTask4.pdf
+181.94 KB
+И дополнительное. !Не обязательно. Но добавлю 3 балла каждому кто догадается как я это сделал.
+ В ход идет только CSS, html выглядит вот так <h1>Дополнительные 3 балла</h1>, больше тегов нет. -->
+
+ <div class="container">
+     <h2 id="recursia_headline" class="recursia_headline">Рекурсия</h2>
+     <div class="recursion_block_outside">
+         <div class="recursion_block_inside">
+             <div class="recursion_block_inside">
+                 <div class="recursion_block_inside">
+                     <div class="recursion_block_inside">
+                         <div class="recursion_block_inside"></div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <h2 id="doublerecursion_block_headline" class="doublerecursion_block_headline">Двойная рекурсия</h2>
+     <section>
+        <div class="doublerecursion_block_outside">
+            <div class="doublerecursion_block_inside_first">
+                <div class="doublerecursion_block_inside_first">
+                    <div class="doublerecursion_block_inside_first">
+                        <div class="doublerecursion_block_inside_first">
+                            <div class="doublerecursion_block_inside_first"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doublerecursion_block_outside">
+            <div class="doublerecursion_block_inside_second">
+                <div class="doublerecursion_block_inside_second">
+                    <div class="doublerecursion_block_inside_second">
+                        <div class="doublerecursion_block_inside_second">
+                            <div class="doublerecursion_block_inside_second"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2 id="verse" class="verse">Многоходовочка</h2>
+    <p class="p_one"> Друг мой, друг мой. Я очень и очень болен. Сам</span><br>
+        не знаю,откуда взялась эта боль. То ли ветер<br>
+        свистит Над пустым и бузлюдным полем,То ль,<br>
+        как рощу в сентябрь, Осыпает мозни алкоголь.<br>
+    </p>
+    <p class="p_two">Черный человек Вводит пальцем по мерзкой <br>
+        книге И, гнусавя надо многой, Как над усопшим<br>
+        монах, Читает мне жазнь Какого-то прохвоста<br>
+        и забулдыги, Нагоняя на душу тоску и страх.<br>
+        Черный человек Черный,черный...
+    </p>
+    <p class="p_tree">
+        Слушай,слушай,-Бормочет он мне,-В<br>
+        книге много прекраснейших Мыслей и<br>
+        планов. Этот человек Проживал в стране<br>
+        Самых отврптительных Громил и<br>
+        шарлатанов.
+    </p>
+    <h2 id="lower_case" class="lower_case">эти буквы сточные</h2>
+    <p>В этом тексте вам будут встречаться сомнительные <img src="https://st.depositphotos.com/1764439/4452/v/450/depositphotos_44529639-stock-illustration-funny-smile-faces.jpg" alt="Рожа"> рожи<br>
+       И что вы думаете? Правильно <img src="http://www.coolday.by/wp-content/uploads/2015/10/ylibka_boo.png" alt="Рожу"> нужно что бы они были<br>
+       вертикально выровнены. Сложного в этом ничего, поэтому <img src="https://s1.mayki.kz/catalog_img/11643/mousepad_square/1_6_zoom.png" alt="Рожа"><br>
+       эта фраза должна выглядеть <span class="text"> примерно вот так</span>. А еще<br>
+       выясните как скруглить углы блока</div> 
+    </p>
+    <h2 class="nav">Навигация</h2>
+    <nav>
+        <a href="#recursia_headline">Рекурсия</a>
+        <a href="#doublerecursion_block_headline" class="doublerecursion_block_headline">Двойная рекурсия</a>
+        <a href="#verse" class="verse">Многоходовочка</a>
+        <a href="#lower_case" class="lower_case">эти буквы строчные</a>
+    </nav>
+    <h1>Дополнительно на 3 балла</h1>
+ </div>
+</body>
+</html>

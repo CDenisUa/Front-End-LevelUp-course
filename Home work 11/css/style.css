@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Norican&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.first_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+li{
+    list-style: none;
+}
+/* ----------------------------Первый блок--------------------------------*/
+.list{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+}
+.lable{
+    display: flex;
+    justify-content: center;
+    font-family: 'Norican', cursive;
+    align-items: flex-end;
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    padding:5px 3px 15px 50px;
+    font-size: 1.8em;
+}
+a{
+    position: relative;
+    text-decoration:none;
+    color: rgb(150, 150, 150);
+    padding-left:20px;
+}
+a:hover{
+    color: #4e4e4e;
+}
+h1{
+    font-size: 1.7em;
+}
+span{
+    padding:10px 50px 10px 40px ;
+    color: rgb(170, 170, 170);
+}
+
+.ul_one{
+    display: inline-flex;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    z-index: 2;
+}
+.house:before {
+    content: "\f015";
+    position: relative;
+    left: -10px;
+    font-family: FontAwesome;
+    color: #4e4e4e;
+    font-size: 1.2em;
+}
+li{
+    position: relative;
+    border: none;
+    background-color: rgb(243, 243, 243);
+    padding: 15px;
+    box-shadow:inset 0px 2px 0px 0px rgb(255, 255, 255),inset 0px -2px 0px 0px rgb(255, 255, 255);
+}
+li::after{
+    content:"";
+    display: block;
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-left: 25px solid rgb(243, 243, 243);
+    border-bottom: 25px solid transparent;
+    z-index: 2;
+}
+li:before{
+    content:"";
+    display: block;
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-left: 25px solid rgb(150, 150, 150);
+    border-bottom: 25px solid transparent;
+    z-index: 2;
+}
+.one{
+    border-radius: 5px 0 0 5px;
+    background-color: rgb(255, 188, 87);
+    box-shadow:inset 0px 2px 0px 0px rgb(255, 217, 161),inset 0px -2px 0px 0px rgb(255, 217, 161);
+}
+.one:before{
+    left:68px;
+    top: 0;
+}
+.one::after{
+    left:67px;
+    top: 0;
+    border-top: 25px solid transparent;
+    border-left: 25px solid rgb(255, 188, 87);
+    border-bottom: 25px solid transparent;
+}
+.two:before{
+    left:113px;
+    top: 0;
+}
+.two::after{
+    left:112px;
+    top: 0;
+}
+.three:before{
+    left:158px;
+    top: 0;
+}
+.three::after{
+    left:157px;
+    top: 0;
+}
+.four{
+    border-radius: 0px 5px 5px 0px;
+}
+.four:before{
+    border-color:transparent;
+}
+.four::after{
+    border-color:transparent;
+}
+/* ----------------------------Второй блок--------------------------------*/
+
+.second_container{
+    display:flex;
+    background-color: rgb(4, 66, 124);
+    justify-content: center;
+    padding:20px 0 20px 0;
+}
+.li_two{
+    display: inline-flex;
+}
+.house:before{
+    color: #fff;
+}
+.li_two{
+    background-color: rgb(47, 131, 209);
+    box-shadow: none;
+}
+.li_two a{
+    padding-left: 10px;
+    color: #fff;
+}
+.li_two:nth-child(even){
+    background-color: rgb(36, 103, 165);
+}
+.li_two:nth-child(even)::after{
+    border-left: 16px solid rgb(36, 103, 165);
+}
+.li_two::after{
+    border-left: 16px solid rgb(47, 131, 209);
+    top: 0px;
+}
+.li_two::before{
+    border-left: 20px solid rgb(4, 66, 124);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent; 
+    top: -5px;
+}
+.second_one::before{
+    left: 57px;
+}
+.second_one::after{
+    left: 57px;
+ 
+}
+.second_two::before{
+    left: 105px;
+}
+.second_two::after{
+    left: 105px;
+}
+.second_three::before{
+    left: 125px;
+}
+.second_three::after{
+    left: 125px;
+}
+.second_four::before{
+    left: 150px;
+}
+.second_four::after{
+    left: 150px;
+}
+.second_five::before,.second_five::after{
+    border: none;
+}
+.breadcrumb::before{
+    content: "\f101";
+    position: relative;
+    font-family: FontAwesome;
+    color: #ffffff;
+    font-size: 1.2em;
+    left: -5px;
+}
+.download::before{
+    content: "\f063";
+    position: relative;
+    font-family: FontAwesome;
+    color: #ffffff;
+    font-size: 1.2em;
+    left: -5px;
+}
+.rocket:before{
+    content: "\f135";
+    position: relative;
+    font-family: FontAwesome;
+    color: #ffffff;
+    font-size: 1.2em;
+    left: -5px;
+}
+.flask:before{
+    content: "\f0c3";
+    position: relative;
+    font-family: FontAwesome;
+    color: #ffffff;
+    font-size: 1.2em;
+    left: -5px;
+}
+
+/* --------------------------------Третий блок-------------------------------- */
+
+.third_block{
+    display: flex;
+    justify-content: center;
+    padding:25px 0px 25px 0px;
+}
+.ul_three{
+   
+    position: relative;
+    display: inline-flex;
+    border: 1px solid rgb(150, 150, 150);
+}
+.ul_three a{
+    position: relative;
+    padding-left: 50px;
+}
+.li_three{
+    position: relative;
+}
+.li_three::before{
+    position: absolute;
+    top: -1px;
+    left: 2px;
+}
+.li_three::after{
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+.three_one:before,.three_one::after{
+    border:none;
+}
+.three_two:before,.three_two::after{
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+}
+.li_three:nth-child(even){
+    background-color: #fff;
+}
+.li_three:nth-child(odd)::after{
+    border-left: 25px solid #fff;
+}
+.three_end_main{
+    display: flex;
+    justify-content: center;
+}
+.three_end {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #4e4e4e;
+}
+.end{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 50px 20px 10px;
+    position: relative;
+}
+.end:before{
+    display:block ;
+    position: absolute;
+    content: "";
+    border-left: 19px solid rgb(177, 177, 177);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+
+}
+.one_1:before{
+    left: 40px;
+}
+.two_2::before{
+    left: 40px;
+    top: 7px;
+    border-left: 20px solid rgb(177, 177, 177) ;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent; 
+}
+.two_2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 41px;
+    border-left: 18px solid rgb(255, 255, 255) ;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+}
+/* ---------------------------------Четвертый блок ---------------------------------*/
+
+.four_block{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.four_block .ul_three li:nth-child(2){
+    background-color: rgb(185, 253, 76);
+    color: bld;
+}
+.four_block .ul_three li:nth-child(3)::after{
+    border-left: 25px solid rgb(185, 253, 76) ;
+}
+.four_block .ul_three li:nth-child(2)::before,.four_block .ul_three li:nth-child(3)::before{
+    border-left: 30px solid rgb(255, 255, 255) ;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent; 
+    top: -7px;
+    left: 5px;
+}
+.four_block .ul_three li a{
+    color: #000000;
+}
+.ul_three{
+    border: none;
+}
+.four_block_out{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.four_under{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    height: 40px;
+    background-color: rgb(185, 253, 76);
+}
+.four_under div{
+    width: 40px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size:2em;
+    text-align: center;
+    position: relative;
+}
+.four_under div:first-child:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-width: 20px 20px 20px;
+    border-style: solid;
+    border-color: rgb(185, 253, 76) rgb(185, 253, 76) transparent; 
+    transform: rotate(90deg);
+    right: 50px;
+    
+}
+.four_under div:last-child::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 30px solid rgb(185, 253, 76);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    top: 0;
+    left: 50px;
+}
+/* ---------------------------------Пятый блок ---------------------------------*/
+
+.block_main{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.ul_five{
+    display: inline-flex;
+    
+}
+.ul_five li{
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+    margin-left: 50px;
+    position: relative;
+    box-shadow: none;
+}
+.ul_five li:before{
+    position: absolute;
+    border: none;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    top: 7px;
+    z-index: -1;
+    left: 85px;
+   
+}
+.ul_five li::after{
+    border: none;
+}
+.five_one:before{
+    background-color: rgb(243, 243, 243);
+}
+.five_two:before,.five_two{
+    background-color: rgb(119, 255, 237);
+
+}
+.five_three::before{
+    background-color: rgb(243, 243, 243);
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Table</title>
+    </head>
+    <body>
+        <!-- <table> - таблица
+            <th> - ячейчка (COLSPAN - обьединение горизонтальной ячейки ROWSPAN - обьединение ячейки по вертикали)
+            <tr> - строка 
+            <b> - жирный шрифт
+            <i> - курсив
+            <sub> - нижний индекс
+            <sup> - верхний индекс
+            <u> - подчеркивание
+            <s> - перечеркивание
+        --> 
+        <center>
+            <i> Меню ресторана "Ромашка" </i>
+            <table>  
+                <tr class="center">
+                    <th rowspan="2" ><b>Кухня</b></th>
+                    <th colspan="2"><b>Холодные блюда</b></th>
+                    <th colspan="2"><b>Горячие блюда</b></th>
+                    <th rowspan="2"><b>Десерты</b></th>
+                </tr>
+                <tr> 
+                    <th>Салаты</th>
+                    <th>Закуски</th>
+                    <th>Первые блюда</th>
+                    <th>Вторые блюда</th>          
+                </tr>
+                <tr>
+                    <th rowspan="3">Русская</th>
+                    <th>Винегрет</th>
+                    <th>Язык с хреном</th>
+                    <th>Щи с квашеной капустой</th>
+                    <th>Вареники с картошкой</th>
+                    <th>Пученые яблоки с медом</th>
+                </tr>
+                <tr>          
+                    <th>Оливье</th>
+                    <th>Студень говяжий</th>
+                    <th>Рассольник домашний</th>
+                    <th>Караси запеченые в сметане</th>
+                    <th>Блинчатый пирог</th>
+                </tr>
+                <tr>
+                    <th>Сельдь под "шубой"</th>
+                    <th>Судак заливной</th>
+                    <th>Мясная солянка</th>
+                    <th>Котлеты "пожарские"</th>
+                    <th>Пирожное "Картошка"</th>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <th rowspan="3">Испанская</th>
+                        <th>Сенвие из гребешков</th>
+                        <th>Эмпанадас</th>
+                        <th>Злебный суп с чесноком</th>
+                        <th>Паэлья с морепродуктами</th>
+                        <th>Чуррос</th>
+                    </tr>
+                    <tr>
+                        <th>Тимбал из авокадо и тунца</th>
+                        <th>Ахотомате</th>
+                        <th>Астурийская фабада</th>
+                        <th>Свиное раксо</th>
+                        <th>Альмойшавена</th>
+                    </tr>
+                    <tr>
+                        <th><i>Фасоль с ветчной</i></th>
+                        <th><i>Чанфайна</i></th>
+                        <th><i>Рыбный суп с манными клейками</i></th>
+                        <th><i>Тортилья картофельная</i></th>
+                        <th><i>Бунуэлос</i></th>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Французкая</th>
+                        <th>Вогезский салат</th>
+                        <th>Рейет из курицы</th>
+                        <th>Баклажанный крем-суп</th>
+                        <th><u>Картофель огратен</u></th>
+                        <th>Бриоши</th>
+                    </tr>
+                    <tr>
+                        <th>Салат "Панзанедлла"</th>
+                        <th>Делисьез из сыра</th>
+                        <th>Францезсий тыевеный суп</th>
+                        <th>Гратин из птицы</th>
+                        <th>Лигурийский лимонный пирог</th>
+                    </tr>
+                    <tr>
+                        <th><b>Тар-тар</b></th>
+                        <th>Маринованный лосось</th>
+                        <th><i>Суп "Конти"</i></th>
+                        <th>Тартифлетт</th>
+                        <th>Саварен "Триумф"</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </center>
+    
+    </body>
+    <style>
+        table
+        {
+            background-image:url(materials/Html.jpg);
+            background-size: 100% 100%;
+            
+        }
+        table,th,tr
+        {
+            border-collapse: collapse;
+            border: 1px solid#111111;
+            text-align: left;
+            padding-left: 5px;
+            font-weight: normal;
+            height: 40px;
+        }
+        .center>th
+        {   
+            text-align: center;
+        }
+    
+    </style>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.fixed_button{
+    width: 120px;
+    height: 100px;
+    background: url('../img/MainProject/up.png') no-repeat;
+    opacity: 0.7;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+
+/* Основный блоки */
+.main_container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.first_container{
+    background-image: url('../img/MainProject/backgroun_1.jpg');
+}
+.second_container{
+    background-image: url('../img/MainProject/backgroun_2.jpg');
+    background-attachment: fixed;
+}
+.third_container{
+    background-image: url('../img/MainProject/backgroun_3.jpg');
+}
+.fourdth_container{
+    background-image: url('../img/MainProject/backgroun_4.jpg');
+    background-attachment: fixed;
+}
+.fifth_container{
+    background-image: url('../img/MainProject/backgroun_5.jpg');
+}
+.sixth_container{
+    background-image: url('../img/MainProject/backgroun_6.jpg');
+    background-attachment: fixed;
+}
+.seventh_container{
+    background-image: url('../img/MainProject/backgroun_7.jpg');
+}
+
+/* Кнопка между слайдами */
+.button_nextslide{
+    width: 50px;
+    height: 50px;
+    background: url('../img/MainProject/down.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    opacity: 0.7;
+
+    
+}
+/* Внутренний контейнер */
+.picture{
+    width: 512px;
+    height: 512px;
+    position: relative;
+    border: 1px solid #000;
+    background-color: #fff;
+    opacity: 0.7;
+    
+}
+.container{
+    width: 512px;
+    height: 512px;
+    position: relative;
+    top: 25%;
+    left: 38%;
+}
+
+.picture_one{
+    background-image: url('../img/MainProject/king.png');
+}
+.picture_two{
+    background-image: url('../img/MainProject/fire.png');
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: 52% 56%;
+}
+.picture_three{
+    background-image: url('../img/MainProject/rain-cloud.png');
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: 52% 56%;
+}
+.picture_four{
+    background-image: url('../img/MainProject/receiptofcash_cash_money.png');
+}
+.picture_five{
+    background-image: url('../img/MainProject/burgerandpotatoes.png');
+}
+.picture_six{
+    background-image: url('../img/MainProject/femalegendersymbol.png');
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: 52% 56%;
+}
+.picture_seven{
+    background-image: url('../img/MainProject/eye_icon-icons.png');
+}
+
+h2{
+    position: absolute;
+    top: 10px;
+    left: 38%;
+    color: rgb(255, 0, 0);
+}
+.third_container>.container>h2{
+    left: 30%;
+}
+.fifth_container>.container> h2{
+    left: 32%;
+}
+.second_container>.container> h2{
+    left: 42%;
+}

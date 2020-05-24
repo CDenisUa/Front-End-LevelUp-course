@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Ultra&display=swap&subset=chinese-traditional');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+/* Mains sections */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 5vh;
+    text-align: center;
+    line-height: 200px;
+    font-family: 'Ultra', serif;
+}
+header{
+position: absolute;
+left: 29%;
+top: 24%;
+}
+ul{
+    display: inline-block;
+    margin-left: 50px;
+}
+li{
+    font-family: 'Muli', sans-serif;
+    font-weight: bolder;
+}
+.Non-metal{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/Non-metal.png);
+}
+.AlkaliMetal{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/AlkaliMetal.png);
+}
+.AlkaliEarthMetal{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/AlkaliEarthMetal.png);
+}
+
+.TransitionMetal{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/TransitionMetal.png);
+}
+.Metal{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/Metal.png);
+}
+.Metalloid{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/Metalloid.png);
+}
+.Halogen{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/Halogen.png);
+}
+.NobleGas{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/NobleGas.png);
+}
+.Lanthanide{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/Lanthanide.png);
+}
+.Actinide{
+    list-style-image: url(../img/PeriodicTableOfTheElements/markers/Actinide.png);
+}
+
+main{
+    width: 95%;
+    height: 85vh;
+    position: fixed;
+    left: 18%;
+    top: 16%;
+}
+.element{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    background: linear-gradient(135deg, #fff 50%,#e4e4e4 50%);
+    float: left;
+    margin: 2px 0 0 2px;
+}
+.empty{
+    width: 64px;
+    height: 64px;
+    border: none;
+    background: none;
+}
+.main_table{
+    width: 67%;
+}
+.lanthanide{
+    width: 56%;
+    position: absolute;
+    top: 500px;
+    left:132px;
+}
+
+/* Describing the element */
+
+.NumberOfElement{
+    font-size: 9px;
+    position: relative;
+    bottom: 6px;
+}
+.LitterOfElement{
+    position: relative;
+    font-size: 35px;
+    font-weight: lighter;
+    bottom: 15px;
+    left: 12px;
+    font-family: 'Ultra', serif;
+}
+.NameOfElement{
+    position: relative;
+    font-size: 7px;
+    bottom: 30px;
+    left: 6px;
+    font-family: 'Muli', sans-serif;
+}
+.IndexOfElement{
+    position: relative;
+    font-size: 7px;
+    bottom: 38px;
+    left: 17px;
+    font-family: 'Muli', sans-serif;
+}
+/* Color */
+.colorNonMetal{
+    border-color: #757479;
+}
+.colorNonMetal p .LitterOfElement{
+    color: #757479;
+}
+.colorAlkaliMetal{
+    border-color: #dd6a22;
+}
+.colorAlkaliMetal p .LitterOfElement{
+    color: #dd6a22;
+}
+.colorAlkalineEarthMetal{
+    border-color: #f5a42d;
+}
+.colorAlkalineEarthMetal p .LitterOfElement{
+    color: #f5a42d;
+}
+.colorTransitionMetal{
+    border-color: #733191;
+}
+.colorTransitionMetal p .LitterOfElement{
+    color: #733191;
+}
+.colorMetal{
+    border-color: #005f29;
+}
+.colorMetal p .LitterOfElement{
+    color: #005f29;
+}
+.colorMetalloid{
+    border-color: #50b92e;
+}
+.colorMetalloid p .LitterOfElement{
+    color: #50b92e;
+}
+.colorHalogen{
+    border-color: #009de5;
+}
+.colorHalogen p .LitterOfElement{
+    color: #009de5;
+}
+.colorNobleGas{
+    border-color: #0865a9;
+}
+.colorNobleGas p .LitterOfElement{
+    color: #0865a9;
+}
+.colorLanthanide{
+    border-color: #bd0b1b;
+}
+.colorLanthanide p .LitterOfElement{
+    color: #bd0b1b;
+}
+.colorActinide{
+    border-color: #c9459f;
+}
+.colorActinide p .LitterOfElement{
+    color: #c9459f;
+}
+
+.twoLitterOfElement{
+    font-size: 28px;
+    bottom: 12px;
+    left: 5px;
+}
+.twoNameOfElement{
+    bottom: 22px;
+}
+.twoIndexOfElement{
+    bottom: 31px;
+}
+
+/* Three litter Of element */
+
+.threeLitterOfElement{
+    font-size: 24px;
+    bottom: 10px;
+    left: 0px;
+
+}
+.threeNameOfElement{
+    bottom: 18px;
+}
+.threeIndexOfElement{
+    bottom: 26px;
+}
+.gap_lanthanide{
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+    color: #bd0b1b;
+}
+.gap_actinide{
+    font-size: 14px;
+    text-align: center;
+    line-height: 60px;
+    color: #c9459f;
+}

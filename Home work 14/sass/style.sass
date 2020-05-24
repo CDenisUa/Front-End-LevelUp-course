@@ -1,0 +1,573 @@
+@import mixins.sass
+@font-face 
+    font-family: OpenSasn
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf)
+@font-face 
+    font-family: OpenSans_bold
+    src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf)
+@font-face 
+    font-family: Raleway
+    src: url(../fonts/Raleway/Raleway-Medium.ttf)
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+$button: #ff9b51
+$words: #cccccc
+$hr: #ff8b38
+
+header
+    background-color: #000
+    display: flex
+    justify-content: center
+.header_container
+    @include content_flexcontainer(100%,inline-flex,space-between,row,center)
+    align-items: center
+    .main_logo
+        width: 80px
+        height: 28px
+        background-image: url(../image/header/Logo.png)
+        background-repeat: no-repeat
+    li 
+        display: inline-block
+        padding: 26px
+
+    a
+        list-style: none
+        text-decoration: none
+        @include myfont(14px,normal,'Open Sans',#ffffff)
+        
+        &:hover
+            color: $button
+.prewiew
+    @include main_background(640px,prewiew_background)
+    display: flex
+    align-items: center
+.discription_form
+    @include content_flexcontainer(400px,flex,space-evenly,row,center)
+.main_left
+    width: 100%
+    height: 400px
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: flex-start
+    
+    width: 50% 
+    .logo_bar
+        width: 180px
+        @include main_background(60px,Logo_bar)
+        background-size: contain
+    hr
+        width: 65px
+    h1 
+        @include myfont(36px,400,'Raleway',#ffffff)
+    p
+        width: 465px  
+        @include myfont(16px,300,'Raleway',#ffffff)
+        color: rgba(255,255,255,0.7)
+.download_button
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: OpenSasn
+        text-decoration: none
+        width: 135px
+        height: 40px
+        background-color: rgba(0, 0, 0, 0)
+        color: #ffffff
+        border: 2px solid #ffffff
+        font-size: 15px
+        margin-top: 30px
+        &:hover
+            background-color: rgba(255, 255, 255, 1)
+            color: #000
+.main_right
+    width: 50%
+    height: 100%
+    display: flex
+    justify-content: flex-end
+    .form
+        width: 362px
+        height: 362px
+        background-color: #fff
+        border-radius: 5px
+    form
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        
+    h2 
+        display: flex
+        justify-content: center
+        background-color: #f5f5f5
+        @include myfont(20px,bold,OpenSasn,#000000)
+        padding: 14px 0
+        border-radius: 5px 5px 0 0
+        span 
+            padding: 0 5px
+            color: $button
+    .input_form
+        width: 80%
+        height: 40px
+        margin: 0 auto
+        border-width: 0 0 1px 0
+        padding-left: 20px
+        &::placeholder
+            color: $words
+        
+    .form_submit
+        background-color: $button
+        color: #ffffff
+        border: none
+        border-radius: 0 0 5px 5px
+        padding: 19px
+        &:hover
+            background-color: darken($button,7%)
+.social
+    @include main_background_color(106px,#ffffff)
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3)
+    position: relative
+    z-index: 2
+    &_body
+        display: inline-flex
+        width: 1110px
+        height: 105px
+        margin: 0 auto
+    &_media
+        width: 49%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        h2 
+            font: 900 20px OpenSasn
+        p 
+            font: 500 14px OpenSasn
+            color: $words
+    &_icons
+        display: inline-flex
+        justify-content: space-evenly
+        align-items: center
+        width: 100%
+        height: 100% 
+.icon__link
+    width: 52px
+    height: 45px
+.facebook
+    background: url(../image/social_icons/facebook.png) no-repeat center
+.twiter
+    background: url(../image/social_icons/twiter.png) no-repeat center
+.google
+    background: url(../image/social_icons/google.png) no-repeat center
+.penterast
+    background: url(../image/social_icons/pinterest.png) no-repeat center
+.instagram
+    background: url(../image/social_icons/instagram.png) no-repeat center
+.announ_social
+    background: url(../image/social_icons/Social.png) no-repeat center
+.wifi
+    background: url(../image/social_icons/wifi.png) no-repeat center
+.tabs        
+    &_main
+        width: 100%
+        height: 595px
+        display: flex
+        align-items: center
+        background-color: #f5f5f5
+    &_inside
+        width: 1110px
+        height: 335px
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+
+    &_discription
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        font-family: OpenSasn
+        h2 
+            font-size: 20px
+        &__button
+            width: 120px
+            height: 45px
+            background-color: $button
+            border: none
+            color: #ffffff
+            font-weight: normal
+            font-family: OpenSasn
+            border-radius: 5px
+            &:hover
+                background-color: darken($button,7%) 
+
+    &_img 
+        display: flex
+        align-items: center  
+        img 
+        width: 320px
+        height: 253px
+.sublist
+    @include main_background_color(596px,#ffffff)
+    width: 100%
+    &_section
+        width: 1150px
+        height: 100%
+        margin: 0 auto
+        display: flex
+        
+    &_img
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        width: 50%
+        height: 100%  
+    &_discription
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-left: 130px
+        &-maintitle
+            font-size: 20px
+        &-maindiscription
+            padding-bottom: 30px 
+        &-titlediscription
+            padding-bottom: 40px 
+        h3,p
+            font-family: OpenSasn
+        hr 
+            width: 65px
+            border: 1px solid $button
+            margin: 30px 0
+        p 
+            color: rgba(0,0,0,0.5)
+        &-titlediscription
+            padding-left: 70px
+            position: relative
+        
+        h3:not(.sublist_discription-maintitle)
+            font-size: 14px
+            padding-left: 70px
+            padding-bottom: 15px
+            position: relative
+.upload::before
+    content: url(../image/sublist/upload.png)
+    position: absolute
+    left: 6px
+.download::before            
+    content: url(../image/sublist/download.png)
+    position: absolute
+    left: 1px
+.standart
+    @include main_background_color(524px,#f5f5f5)
+    margin: 0 auto
+    &_section
+        width: 1150px
+        display: flex
+        flex-direction: row
+    &_content
+        width: 40%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        font-family: OpenSasn
+        padding-left: 38px
+        hr 
+            border: 1px solid $button
+            width: 70px
+            margin-top: 20px
+        &-text
+            font-size: 14px
+            color: rgba(0,0,0,0.5)
+            padding: 16px 0
+
+    &_img
+        width: 60%
+        display: flex
+        align-items: center
+        justify-content: flex-end
+.title
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: OpenSasn
+    &-title 
+        font-family: Raleway
+        font-size: 36px
+        font-weight: 100
+    hr 
+        border: 1px solid $button
+        width: 67px
+        margin: 25px 0
+    &-text
+        font-size: 14px
+        color: rgba(0,0,0,0.5)
+.awesome
+    @include main_background_color(594px,#ffffff)
+    &_container
+        width: 1100px
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+    &_blocks
+        display: flex
+        flex-direction: row
+        justify-content: center
+    &_block
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-family: OpenSasn
+        width: 330px
+        height: 250px
+        img
+            width: 70px
+            height: 70px
+            font-size: 20px
+            font-weight: 900
+        h3 
+            font-size: 20px
+            font-weight: 900
+            padding: 20px
+        p
+            font-size: 14px
+            color: rgba(0,0,0,0.5)
+            text-align: center   
+.pricing
+    display: flex
+    flex-direction: column
+    @include main_background_color(885px,#f5f5f5)
+    table,tr
+        display: block
+        border-collapse: collapse;
+    tr 
+       width: 345px
+       border: 1px solid rgba(0,0,0,0)
+       
+    td
+        display: flex   
+        justify-content: center
+        align-items: center
+       
+    &_body
+        display: flex
+        justify-content: center
+    &_block
+        padding: 20px
+    
+
+
+.table
+    &_header
+        background-color: #333333
+        position: relative
+        top: 33px
+        transition: all 0.6s
+        &-hover:hover
+            top: 0px
+            
+       
+        &-start
+            border-bottom: 1px solid #fff
+            font-family: serif 
+            font-family: OpenSasn
+            font-weight: 900
+            color: #fff
+            padding: 10px
+            background-color: #333333
+        &-price
+            width: 100%
+            height: 100%
+            
+        &-dollar
+            font-size: 35px
+            font-family: Raleway
+            color: #ffffff
+            display: flex
+            padding-top: 40px
+        &-summ
+            font-size: 94px
+            font-family: Raleway
+            color: #ffffff
+            font-weight: 900
+            
+        &_footer
+            font-size: 14px
+            font-family: Raleway
+            font-style: italic
+            color: rgba(255, 255, 255, 0.5)
+            padding-bottom: 10px
+        
+    &_popular
+        background-color: $button
+        color: #ffffff
+        font-family: OpenSasn
+        font-size: 14px
+        padding: 10px
+    &_footer
+        background-color: #fff
+        margin-bottom: 1px
+        font-family: OpenSasn
+        font-size: 14px
+        color: rgba(0, 0, 0, 0.3)
+        text-transform: uppercase 
+        font-weight: 900
+        padding: 10px
+.customers
+    @include main_background_color(590px,#ffffff)
+    display: flex
+    flex-direction: column
+    &_title
+        padding: 50px
+    &_blocks
+        width: 1110px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    &_block
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &-text 
+            width: 270px
+            height: 135px
+            background-color: #f5f5f5
+            border-radius: 5px
+            padding: 20px 15px
+            text-align: left
+            text-indent: -39px
+            font-size: 14px
+            font-style: italic
+            font-family: Raleway
+            color: rgba(0,0,0,0.5)
+            &::before
+                content: ''
+                border: 20px solid transparent; border-top: 25px solid #f5f5f5;
+                position: relative
+                top: 130px
+                left: 39px
+        &-user 
+            display: flex
+            margin-top: 10px
+        &_info
+            display: flex
+            flex-direction: column
+            justify-content: center
+            font-family: Raleway
+            padding-left: 20px
+        &-name 
+            font-size: 20px
+            font-weight: 900
+        &-special
+            font-size: 14px
+            color: rgba(0,0,0,0.5)           
+.stylish
+    @include main_background(320px,stylish_background)
+    background-image: url(../image/stylish/stylish_background.png)
+    display: flex
+    align-items: center
+    hr 
+        border: 1px solid #ffffff
+    &__title
+        color: #ffffff
+    &__title-text
+        color: rgba(255,255 ,255 ,0.5 )
+.contacts
+    @include main_background_color(613px,#ffffff)
+    &_container
+        display: flex
+        flex-direction: column
+        margin: 0 auto
+        justify-content: center
+        align-items: center
+    &_form
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        &-main
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            padding-top: 60px
+            padding-bottom: 40px
+            
+        &-left
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 520px
+            height: 150px
+            input 
+                border-width: 0 0 2px 0 
+                height: 30px
+            input::placeholder
+                color: rgba(0, 0, 0, 0.3)
+                padding: 0 10px
+                font-family: OpenSasn
+                font-size: 14px
+
+        &-right
+            textarea 
+                margin-left: 60px
+                width: 520px
+                height: 150px
+                resize: none
+                border-width: 0px 0px 2px 0px
+                border-color: rgba(0, 0, 0, 0.1)
+            textarea::placeholder
+                color: rgba(0, 0, 0, 0.3)
+                padding: 0 10px
+                font-family: OpenSasn
+                font-size: 14px
+                
+            
+            
+        &-button 
+            border: none
+            background-color: $button
+            color: #fff
+            font-family: OpenSasn
+            width: 150px
+            height: 40px
+            border-radius: 5px   
+footer
+    display: flex
+    justify-content: center
+    width: 100%
+    background-color: #000
+    .footer_icons
+        width: 400px
+        height: 100px
+        display: flex   
+        flex-direction: column
+        justify-content: space-evenly
+
+    .footer_iconsblock
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+    .footer__items
+        width: 30px
+        height: 30px
+        background-size: contain
+        background-position: none
+    .footer_axure
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        color: #fff
+        font: 400 12px OpenSasn
+        color: rgba(255, 255, 255,0.5 )
+
+
+

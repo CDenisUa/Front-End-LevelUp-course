@@ -1,0 +1,138 @@
+
+@font-face 
+    font-family: BrandonGrotesque
+    src: url(../fonts/BrandonGrotesque-Regular.ttf)
+@font-face 
+    font-family: Cubano
+    src: url(../fonts/Cubano-Font/cubano-regular-webfont.ttf)
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: BrandonGrotesque
+footer 
+    width: 100%
+    height: 620px
+    background: darken(#000,40%) url(../img/footer/Image.png) no-repeat 50% 50%
+    background-size: cover
+    color: #ffffff
+    .shadow 
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,0.3)
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        align-items: center      
+.header
+    &-menu
+        width: 940px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-top: 50px
+        a 
+            text-decoration: none 
+            color: #fff
+            padding: 15px
+            font-size: 15px
+        &_logo
+            font-family: Cubano
+            font-weight: 900
+            font-size: 24.84px 
+            position: relative
+            &::before
+                content: url(../img/icons/logo.png)
+                width: 35px
+                height: 30px
+                position: absolute
+                left: -45px
+                top: 5px
+        &_content
+            width: 860px
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 130px
+            h2 
+                font-weight: 200
+                font-size: 25px
+            h1 
+                font-size: 55px
+                margin-top: 30px
+            button 
+                margin-top: 50px
+                background-color: rgba(255, 255, 255, 0)
+                color: #ffffff
+                font-family: BrandonGrotesque
+                font-size: 18px
+                font-weight: 600
+                border: 2px solid #fff
+                border-radius: 3px
+                width: 210px
+                height: 60px
+                left: -10px
+                position: relative
+                &:hover
+                    background-color: rgba(255, 255, 255, 0.8)
+                    color: #000
+.main-header
+    padding: 100px
+    &-body
+        width: 860px
+        height: 240px
+        display: flex
+        margin: 0 auto
+        justify-content: space-between
+    &-content
+        width: 550px
+        height: 20px
+        img 
+            width: 280px
+            height: 220px
+            margin-top: 30px
+        h2 
+            font-size: 45px
+            span 
+                font-weight: 200
+        p 
+            padding: 25px 0
+            font-size: 15px
+            color: rgba(0,0 ,0 ,0.5)
+            font-weight: 500
+.header-second
+    background-color: #fafafa
+.second>img
+    width: 230px
+    height: 50px
+.main
+    &-body
+        width: 860px
+        height: 390px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        padding: 50px 0
+    &-content
+        display: flex
+        &_text
+            width: 250px
+            margin-left: 25px
+            padding: 20px 0
+        &_image
+            width: 71px
+            height: 71px
+            background-color: #000000
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 20px
+            img
+                max-width: 50%
+                max-height: 75%
+                object-position: 0 0
+
+@import _media.sass

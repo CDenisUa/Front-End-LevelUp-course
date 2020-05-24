@@ -1,0 +1,72 @@
+/* 1. Ссылки якоря, не должны быть подчеркнуты +
+    1.1 Link1 должен быть зеленого цвета. +
+    1.2 Link2 должен быть красного цвета. +
+    1.3 Link5 должен быть синего цвета. +
+2. Заголовок h1 должен быть по центру (загуглите как). + 
+3. Блок с классом text, весь текст дожен быть 20 пикселов +
+4. Блок с классом article (1). Заголовок зеленого цвета. +
+    4.1 <p> с классом underline должны быть подчеркнуты +
+    4.2 <p> без класса должен быть размером 13 пикселов. +
+5. Блок с классом article (2). Заголовок красного цвета. +
+    5.1 <p> с классом underline должны быть размером 18 пикселов. +
+    5.2 <p> без класса должен быть красного цвета. +
+5. Блок с классом article2. Заголовок синего цвета. +
+    5.1 <p> с классом underline должны быть красными и размером 12 пикселов. +
+    5.2 <p> без класса должен быть зеленого цвета. +*/
+ul li a
+{
+    text-decoration: none;
+}
+
+a[href^="#anchor1"]
+{
+    color:#00ff00;
+}
+a[href^="#anchor2"]
+{
+    color:#ff0000;
+}
+a[href^="#anchor5"]
+{
+    color:#0000ff;
+}
+
+h1{
+    text-align: center;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.article #anchor1 {
+    color:#00ff00;
+}
+.article .underline {
+    text-decoration: underline;
+}
+p:not([class]) 
+{
+    font-size: 13px;
+    color: #ff0000;
+}
+
+.article #anchor2{
+    color:#ff0000;
+}
+
+.underline {
+    font-size: 18px;
+}
+
+.article2 #anchor5{
+    color: #0000ff;
+}
+
+.article2 .underline{
+    font-size: 13 px;
+    color: #ff0000;
+}
+.article2 p{
+    color:#00ff00;
+}

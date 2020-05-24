@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.invisible{
+    display: block;
+    position: absolute;
+    width: 800px;
+    height: 40vh;
+    background-color:rgb(252, 151, 57);
+    left: 30%;
+    top: 20vh;
+    text-align: center;
+    z-index:1;
+}
+form{
+    display: block;
+    position: absolute;
+    width: 800px;
+    height: 40vh;
+    background-image: url(../img/picture.jpg);
+    left: 30%;
+    top: 20vh;
+    color: #ffffff;
+    z-index: 1;
+    caret-color: red;
+}
+#checked,#checked_1{
+    display: none;
+}
+section{
+   position: relative;
+   left: 37%;
+   top: 20%;
+}
+section h2{
+    margin-left: 40px;
+}
+.button{
+    margin-left: 2px;
+}
+.button:hover{
+    margin-left: 2px;
+    background-color: rgb(90, 90, 90);
+}
+form input{
+    position: relative;
+    width: 200px;
+    margin-top: 10px;
+}
+label{
+    width: 100px;
+    height: 28px;
+    background-color: rgb(250, 180, 89);
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    top: 17vh;
+}
+.first_button{
+    left:55%;   
+}
+.second_button{
+    left: 42%;
+}
+
+input[name="checked_form"]:checked+.invisible,input[name="checked_form"]:checked~.first_button{
+    background-color: rgb(255, 160, 19); 
+    z-index: 4;
+}
+input[name="checked_form"]:checked+.second_button{
+    background-color: rgb(255, 160, 19); 
+}
+
+
+
+

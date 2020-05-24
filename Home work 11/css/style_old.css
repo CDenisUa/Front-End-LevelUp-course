@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 40%;
+    position: relative;
+    max-width: 0 auto;
+    margin: 0 auto;
+}
+/* ----------------------First table-------------------------------- */
+
+
+.first_block{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top:50px;
+    background-color: rgb(23, 73, 119);
+    
+}
+ul{
+    width: 80%;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 23%;
+}
+li{
+    border-radius: 2px;
+    width: 22.5%;
+    height: 50px;
+    display: block;
+    float: left;
+    position: relative;
+    background-color: rgb(35, 121, 202);
+}
+li:nth-child(odd){
+    background-color: rgb(44, 146, 241);
+}
+li:nth-child(even)::before{
+    border-top: 25px solid transparent;
+    border-left: 12px solid rgb(44, 146, 241);
+    border-bottom: 25px solid transparent; 
+}
+.block_one_one{
+    width: 6%;
+    margin-left: 0px;
+
+}
+.block_one_two::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 12px solid rgb(35, 121, 202);
+    border-bottom: 25px solid transparent; 
+    z-index: 2;
+}
+.block_one_two::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 15px solid rgb(23, 73, 119);
+    border-bottom: 30px solid transparent;
+    top: -5px;
+    left: 1px;
+    z-index: 1;
+}
+a{
+    display: inline-block;
+    width: 100px;
+    margin-left: 60px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+.content:before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+.left:before{
+    background-image: url(../image/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.house:before{
+    width: 15px;
+    height: 15px;
+    background-image: url(../image/2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 18px;
+    left: 17px;
+}
+.chimical:before{
+    width: 15px;
+    height: 15px;
+    background-image: url(../image/3.png);
+    top: 18px;
+    left: 40px;
+}
+.rocket:before{
+    width: 15px;
+    height: 15px;
+    background-image: url(../image/4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 18px;
+    left: 35px;
+}
+.down:before{
+    width: 15px;
+    height: 15px;
+    background-image: url(../image/5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 18px;
+    left: 40px;
+}
+/* ------------------First block------------------------------ */
+
+.second_block_main{
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: rgb(94, 94, 94);
+}
+.second_block_ol{
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    float: none;
+}
+.second_block{
+    width: calc(100%/3);
+    margin-top: 20px;
+    
+}
+
+ol li:nth-child(2){
+    background-color: rgb(243, 243, 243);
+}
+ol li:nth-child(odd){
+    background-color: rgb(182, 182, 182);
+}
+ol li:nth-child(2)::before{
+    border-left: 12px solid rgb(182, 182, 182);
+}
+ol li:nth-child(3)::before{
+    border-left: 12px solid rgb(243, 243, 243);
+}
+ol li:nth-child(n)::after{
+    border-top: 30px solid transparent;
+    border-left: 14px solid rgb(94, 94, 94);
+    border-bottom: 30px solid transparent; 
+}

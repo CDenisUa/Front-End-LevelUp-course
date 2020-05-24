@@ -1,0 +1,22 @@
+@mixin f-j-c()
+    display: flex
+    justify-content: center
+@mixin f-center()
+    display: flex
+    margin: auto
+    justify-content: center
+    align-items: center
+@mixin f-column()
+    display: flex
+    flex-flow: column wrap
+@mixin flex-row()
+    display: flex
+    flex-flow: row wrap
+@mixin container($width: 1200)
+        max-width: $width + px
+        width: 100%
+        margin: 0
+        padding: 0 10px
+        margin: 0 auto
+
+$mediaBp: ( 992px,768px,576px, 480px)
